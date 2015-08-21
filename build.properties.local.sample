@@ -1,0 +1,12 @@
+db.host=localhost
+db.user=root
+;db.password=
+db.name=mercadopago
+
+magento.root.folder=./source/
+magento.domain=mercadopago.local
+magento.admin.firstname=Facundo
+magento.admin.lastname=Capua
+magento.admin.email=fcapua@summasolutions.net
+magento.admin.user=admin
+magento.admin.password=Summa2015

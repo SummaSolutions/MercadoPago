@@ -1,0 +1,50 @@
+<redis_session>
+    <host>127.0.0.1</host>
+    <port>6379</port>
+    <timeout>2.5</timeout>
+    <persistent>0</persistent>
+    <db>2</db>
+    <compression_threshold>2048</compression_threshold>
+    <compression_lib>gzip</compression_lib>
+    <log_level>4</log_level>
+    <max_concurrency>6</max_concurrency>
+    <break_after_frontend>5</break_after_frontend>
+    <break_after_adminhtml>30</break_after_adminhtml>
+    <bot_lifetime>7200</bot_lifetime>
+</redis_session>
+
+<cache>
+    <backend>Mage_Cache_Backend_Redis</backend>
+    <backend_options>
+        <server>127.0.0.1</server>
+        <port>6379</port>
+        <persistent>0</persistent>
+        <database>0</database>
+        <force_standalone>0</force_standalone>
+        <connect_retries>1</connect_retries>
+        <read_timeout>10</read_timeout>
+        <automatic_cleaning_factor>0</automatic_cleaning_factor>
+        <compress_data>1</compress_data>
+        <compress_tags>1</compress_tags>
+        <compress_threshold>20480</compress_threshold>
+        <compression_lib>gzip</compression_lib>
+    </backend_options>
+</cache>
+
+<full_page_cache>
+    <backend>Mage_Cache_Backend_Redis</backend>
+    <backend_options>
+        <server>127.0.0.1</server>
+        <port>6379</port>
+        <persistent>0</persistent>
+        <database>1</database>
+        <force_standalone>0</force_standalone>
+        <connect_retries>1</connect_retries>
+        <read_timeout>10</read_timeout>
+        <automatic_cleaning_factor>0</automatic_cleaning_factor>
+        <compress_data>1</compress_data>
+        <compress_tags>1</compress_tags>
+        <compress_threshold>20480</compress_threshold>
+        <compression_lib>gzip</compression_lib>
+    </backend_options>
+</full_page_cache>
