@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="Mercado Pago Magento Plugin" basedir="." default="">
+<project name="Mercado Pago Magento Plugin" basedir="." default="main">
 
     <property file="build.properties"/>
     <property file="build.properties.local"/>
@@ -7,6 +7,28 @@
     <tstamp>
         <format property="build.time" pattern="%Y%m%d_%H%M"/>
     </tstamp>
+
+    <import file="dev/build/build-tools.xml" />
+
+    <target name="main">
+        <echo>Mercado Pago - Main Build File</echo>
+    </target>
+
+    <target name="develop">
+        <if>
+            <isset property="env.PROJECT_HOME" />
+            <then>
+                <property name="develop.home" value="${env.PROJECT_HOME}" />
+            </then>
+            <else>
+                <property name="develop.home" value="${project.basedir}" />
+            </else>
+        </if>
+        <phingcall target="symlinks">
+            <property name="symlinks.src" value="${develop.home}/plugin/v1.6.x - 1.9.x - Transparent"/>
+            <property name="symlinks.dest" value="${develop.home}/source"/>
+        </phingcall>
+    </target>
 
     <!-- ============================================  -->
     <!-- Target: setup                                 -->

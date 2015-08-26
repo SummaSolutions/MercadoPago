@@ -4,6 +4,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "puphpet/debian75-x64"
 
   config.vm.provision :shell, :inline => "echo 'export LC_CTYPE=\"en_US.UTF-8\"' >> /home/vagrant/.bashrc"
+  config.vm.provision :shell, :inline => "echo 'export PROJECT_HOME=\""+File.dirname(__FILE__)+"\"' >> /home/vagrant/.bashrc"
   config.vm.provision :shell, :path => "bin/bootstrap.sh"
   config.vm.provision :shell, :path => "bin/init.sh", :privileged => false
   

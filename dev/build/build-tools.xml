@@ -1,0 +1,27 @@
+<project name="ocentric-build-tools" basedir="." default="main">
+    <target name="main">
+        <echo>Common build file.</echo>
+    </target>
+
+    <target name="symlinks">
+        <property name="symlinks.src" value=""/>
+        <property name="symlinks.dest" value=""/>
+        <exec checkreturn="false" logoutput="true" command="bash ${project.basedir}/dev/tools/bin/symlinks.sh '${symlinks.src}' '${symlinks.dest}'"/>
+    </target>
+    <!--<target name="symlinks">-->
+        <!--<property name="symlinks.src" value=""/>-->
+        <!--<property name="symlinks.dest" value=""/>-->
+        <!--<foreach param="dirname" absparam="absname" target="symlink">-->
+            <!--<fileset dir="${symlinks.src}">-->
+                <!--<exclude name=".git/**"/>-->
+                <!--<exclude name=".svn/**"/>-->
+            <!--</fileset>-->
+        <!--</foreach>-->
+    <!--</target>-->
+    <!--<target name="symlink">-->
+        <!--<property name="symlinks.dest" value=""/>-->
+
+        <!--<exec checkreturn="false" logoutput="true" command="ln -s ${symlinks.src} ${symlinks.dest};"/>-->
+    <!--</target>-->
+</project>
+
