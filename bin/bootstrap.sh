@@ -11,6 +11,11 @@ sed -i "s/#alias ll='ls -l'/alias ll='ls -l'/g" /home/vagrant/.bashrc
 sed -i "s/#alias la='ls -A'/alias la='ls -A'/g" /home/vagrant/.bashrc
 sed -i "s/#alias l='ls -CF'/alias l='ls -CF'/g" /home/vagrant/.bashrc
 
+source /home/vagrant/.bashrc
+mkdir -p `dirname ${PROJECT_HOME}`
+ln -s /vagrant ${PROJECT_HOME}
+chown vagrant:vagrant ${PROJECT_HOME}
+
 apt-get update
 apt-get -y install curl
 
