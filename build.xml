@@ -26,7 +26,7 @@
         </if>
         <phingcall target="symlinks">
             <property name="symlinks.src" value="${develop.home}/plugin/v1.6.x - 1.9.x - Transparent"/>
-            <property name="symlinks.dest" value="${develop.home}/source"/>
+            <property name="symlinks.dest" value="${develop.home}/${magento.root.folder}"/>
         </phingcall>
     </target>
 

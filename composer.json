@@ -9,7 +9,13 @@
   ],
   "require": {
     "aydin-hassan/magento-core-composer-installer": "~1.0",
-    "magento/magento": "1.9.2.1"
+    "magento/magento": "1.9.2.1",
+    "magetest/magento-behat-extension": "dev-feature/Behat3",
+    "behat/mink-extension": "*",
+    "behat/mink-goutte-driver": "*",
+    "behat/mink-selenium2-driver": "*",
+    "behat/mink-selenium-driver": "*",
+    "bossa/phpspec2-expect": "1.*"
   },
   "repositories": [
     {
@@ -18,7 +24,7 @@
     }
   ],
   "extra": {
-    "magento-root-dir": "source",
+    "magento-root-dir": "htdocs",
     "magento-core-deploy": {
       "excludes": [
         "composer.json",
@@ -32,11 +38,11 @@
   "autoload": {
     "psr-0": {
       "": [
-        "source/app",
-        "source/lib",
-        "source/app/code/local",
-        "source/app/code/community",
-        "source/app/code/core"
+        "htdocs/app",
+        "htdocs/lib",
+        "htdocs/app/code/local",
+        "htdocs/app/code/community",
+        "htdocs/app/code/core"
       ]
     }
   },

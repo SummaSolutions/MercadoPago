@@ -3,7 +3,7 @@ db.user=root
 ;db.password=
 db.name=mercadopago
 
-magento.root.folder=./source/
+magento.root.folder=htdocs
 magento.domain=mercadopago.local
 magento.admin.firstname=Facundo
 magento.admin.lastname=Capua
