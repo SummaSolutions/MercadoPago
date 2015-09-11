@@ -3,6 +3,7 @@
 
     <property file="build.properties"/>
     <property file="build.properties.local"/>
+    <property file="${project.basedir}/dev/build/properties/build.properties.${plugin.country}" override="true" />
 
     <tstamp>
         <format property="build.time" pattern="%Y%m%d_%H%M"/>
@@ -28,6 +29,16 @@
             <property name="symlinks.src" value="${develop.home}/plugin/v1.6.x - 1.9.x - Transparent"/>
             <property name="symlinks.dest" value="${develop.home}/${magento.root.folder}"/>
         </phingcall>
+    </target>
+
+
+    <target name="magento_configuration">
+        <exec command="php dev/tools/n98-magerun.phar config:set dev/template/allow_symlink ${system.config.dev.template.allow_symlink}" logoutput="true" />
+
+        <exec command="php dev/tools/n98-magerun.phar config:set payment/mercadopago/client_id ${plugin.client_id}" logoutput="true" />
+        <exec command="php dev/tools/n98-magerun.phar config:set payment/mercadopago/client_secret ${plugin.client_secret}" logoutput="true" />
+        <exec command="php dev/tools/n98-magerun.phar config:set payment/mercadopago_custom/active ${plugin.active}" logoutput="true" />
+        <exec command="php dev/tools/n98-magerun.phar config:set payment/mercadopago_custom/public_key ${plugin.public_key}" logoutput="true" />
     </target>
 
     <!-- ============================================  -->

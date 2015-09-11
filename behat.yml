@@ -11,5 +11,5 @@ default:
           CURLOPT_TIMEOUT: 120
         ssl.certificate_authority: false
       selenium2:
-        wd_host: http://127.0.0.1:4444/wd/hub
+        wd_host: http://127.0.0.1:8643/wd/hub
         browser: firefox

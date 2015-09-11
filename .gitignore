@@ -15,10 +15,11 @@ nbproject
 #Phing
 /build.properties.local
 
-#Projec
+#Project
 /bin/behat
 /bin/phpspec
 /htdocs
 /tmp
 /vendor
 /composer.lock
+/dev/tools/vendor

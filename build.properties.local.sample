@@ -10,3 +10,7 @@ magento.admin.lastname=Capua
 magento.admin.email=fcapua@summasolutions.net
 magento.admin.user=admin
 magento.admin.password=Summa2015
+
+system.config.dev.template.allow_symlink=1
+
+plugin.country=mla
