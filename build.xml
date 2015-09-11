@@ -48,7 +48,7 @@
         <exec command="tar -xzf ./tmp/sample-data.tgz -C ./tmp/" logoutput="true" />
 
         <if>
-            <isset property="${db.password}" />
+            <isset property="db.password" />
             <then>
                 <property name="db.password.string" value="-p${db.password}" />
             </then>
