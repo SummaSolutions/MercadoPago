@@ -1,17 +1,15 @@
 default:
   extensions:
     MageTest\MagentoExtension\Extension: ~
-    Cjm\Behat\StepThroughExtension: ~
     Behat\MinkExtension:
       base_url: "http://mercadopago.local/"
-#      goutte:
-#        guzzle_parameters:
-#        curl.options:
-#          CURLOPT_SSL_VERIFYPEER: false
-#          CURLOPT_CERTINFO: false
-#          CURLOPT_TIMEOUT: 120
-#        ssl.certificate_authority: false
+      goutte:
+        guzzle_parameters:
+        curl.options:
+          CURLOPT_SSL_VERIFYPEER: false
+          CURLOPT_CERTINFO: false
+          CURLOPT_TIMEOUT: 120
+        ssl.certificate_authority: false
       selenium2:
-        #wd_host: http://127.0.0.1:8643/wd/hub
-        wd_host: http://33.33.33.1:4444/wd/hub
+        wd_host: http://127.0.0.1:8643/wd/hub
         browser: firefox

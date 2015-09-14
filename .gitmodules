@@ -1,3 +1,3 @@
 [submodule "plugin"]
 	path = plugin
-	url = git@github.com:mercadopago/cart-magento.git
+	url = git@github.com:SummaSolutions/cart-magento.git
