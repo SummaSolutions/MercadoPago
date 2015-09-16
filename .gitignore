@@ -18,6 +18,7 @@ nbproject
 #Project
 /bin/behat
 /bin/phpspec
+/bin/phing
 /htdocs
 /tmp
 /vendor
