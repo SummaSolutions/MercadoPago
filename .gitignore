@@ -18,8 +18,11 @@ nbproject
 #Project
 /bin/behat
 /bin/phpspec
+/bin/phing
 /htdocs
 /tmp
 /vendor
 /composer.lock
 /dev/tools/vendor
+/dev/tools/bin
+/dev/tools/composer.lock

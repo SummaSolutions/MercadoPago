@@ -18,7 +18,8 @@
   "require-dev": {
     "bossa/phpspec2-expect": "1.*",
     "magetest/magento-phpspec-extension": "~2.0",
-    "ciaranmcnulty/behat-stepthroughextension" : "dev-master"
+    "ciaranmcnulty/behat-stepthroughextension" : "dev-master",
+    "phing/phing": "^2.13@dev"
   },
   "repositories": [
     {

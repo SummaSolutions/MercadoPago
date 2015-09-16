@@ -1,15 +1,19 @@
 {
-    "name": "mercadopago/magento-plugin",
-    "description": "MercadoPago Magento Plugin - Dev Tools",
-    "type": "project",
-    "authors": [
-        {
-            "name": "Facundo Capua",
-            "email": "fcapua@summasolutions.net"
-        }
-    ],
-    "require": {
-        "squizlabs/php_codesniffer": "*",
-        "phpmd/phpmd": "@stable"
+  "name": "mercadopago/magento-plugin",
+  "description": "MercadoPago Magento Plugin - Dev Tools",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Facundo Capua",
+      "email": "fcapua@summasolutions.net"
     }
+  ],
+  "require-dev": {
+    "squizlabs/php_codesniffer": "*",
+    "phpmd/phpmd": "@stable",
+    "halleck45/phpmetrics": "@stable"
+  },
+  "config": {
+    "bin-dir": "bin/"
+  }
 }
