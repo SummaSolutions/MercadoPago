@@ -24,3 +24,5 @@ nbproject
 /vendor
 /composer.lock
 /dev/tools/vendor
+/dev/tools/bin
+/dev/tools/composer.lock
