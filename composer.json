@@ -10,15 +10,9 @@
   "require": {
     "aydin-hassan/magento-core-composer-installer": "~1.0",
     "magento/magento": "1.9.2.1",
-    "magetest/magento-behat-extension": "dev-feature/Behat3",
-    "behat/mink-extension": "*",
-    "behat/mink-goutte-driver": "*",
-    "behat/mink-selenium2-driver": "*"
+    "fabpot/php-cs-fixer": "^2.0@dev"
   },
   "require-dev": {
-    "bossa/phpspec2-expect": "1.*",
-    "magetest/magento-phpspec-extension": "~2.0",
-    "ciaranmcnulty/behat-stepthroughextension" : "dev-master",
     "phing/phing": "^2.13@dev"
   },
   "repositories": [

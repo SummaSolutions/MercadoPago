@@ -19,6 +19,7 @@ nbproject
 /bin/behat
 /bin/phpspec
 /bin/phing
+/bin/php-cs-fixer
 /htdocs
 /tmp
 /vendor
