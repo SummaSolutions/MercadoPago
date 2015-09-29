@@ -1,4 +1,4 @@
-<project name="ocentric-build-tools" basedir="." default="main">
+<project name="build-tools" basedir="." default="main">
     <target name="main">
         <echo>Common build file.</echo>
     </target>

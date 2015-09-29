@@ -20,7 +20,7 @@ chown -R vagrant:vagrant ${PROJECT_HOME}
 apt-get update
 apt-get -y install curl
 
-provisioners=(percona-mysql nginx php vim xdebug redis n98-magerun composer compass phing)
+provisioners=(mysql nginx php vim xdebug redis composer compass phing)
 for i in "${provisioners[@]}"
 do
     if [ ! -f /home/vagrant/log/${i} ];
