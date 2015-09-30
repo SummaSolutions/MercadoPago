@@ -31,7 +31,10 @@
     }
   },
   "config":{
-    "bin-dir" : "bin"
+    "bin-dir" : "bin",
+    "process-timeout":      600,
+    "preferred-install":    "dist",
+    "github-protocols":     ["https"]
   },
   "autoload": {
     "psr-0": {
