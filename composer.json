@@ -22,7 +22,7 @@
     }
   ],
   "extra": {
-    "magento-root-dir": "htdocs",
+    "magento-root-dir": "plugin/htdocs",
     "magento-core-deploy": {
       "excludes": [
         "composer.json",
@@ -39,11 +39,11 @@
   "autoload": {
     "psr-0": {
       "": [
-        "htdocs/app",
-        "htdocs/lib",
-        "htdocs/app/code/local",
-        "htdocs/app/code/community",
-        "htdocs/app/code/core"
+        "plugin/htdocs/app",
+        "plugin/htdocs/lib",
+        "plugin/htdocs/app/code/local",
+        "plugin/htdocs/app/code/community",
+        "plugin/htdocs/app/code/core"
       ]
     }
   },

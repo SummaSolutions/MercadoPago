@@ -3,7 +3,7 @@ PROJECT_URL="mercadopago.local"
 
 #VIRTUAL HOST
 echo "[$0] Creating Virtual Host"
-ln -s /vagrant/htdocs /var/www/magento
+ln -s /vagrant/plugin/htdocs /var/www/magento
 
 cp /vagrant/conf/nginx/site.conf /etc/nginx/sites-available/$PROJECT_URL
 sed -i "s|\$PROJECT_URL|${PROJECT_URL}|g" /etc/nginx/sites-available/$PROJECT_URL
