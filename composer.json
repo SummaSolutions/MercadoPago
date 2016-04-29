@@ -13,12 +13,17 @@
     "fabpot/php-cs-fixer": "^2.0@dev"
   },
   "require-dev": {
-    "phing/phing": "^2.13@dev"
+    "phing/phing": "^2.13@dev",
+    "summasolutions/summa-email-plus": "*"
   },
   "repositories": [
     {
       "type": "vcs",
       "url": "git@github.com:AydinHassan/magento-community.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://dachaga@bitbucket.org/summasolutions/summa-email-plus.git"
     }
   ],
   "extra": {

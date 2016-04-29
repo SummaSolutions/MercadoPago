@@ -27,3 +27,6 @@ nbproject
 /dev/tools/vendor
 /dev/tools/bin
 /dev/tools/composer.lock
+
+/bin/magento-composer-installer.php
+/bin/validate-json
